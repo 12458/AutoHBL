@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -11,8 +13,6 @@ opt = ""
 # Your Name
 name = ""
 # End Configuration
-
-driver.get(url)
 
 
 def name_select(url, xpath="", name=""):
@@ -49,12 +49,15 @@ def submit():
 
 
 def main():
+    print("Started at ", time.strftime("%H:%M:%S", time.localtime()))
+    driver.get(url)
     name_select(url, name=name)
     are_you_feeling_well_today()
     next_pg1()
     next_pg2()
     submit()
     driver.close()
+    print("Stopped at ", time.strftime("%H:%M:%S", time.localtime()))
 
 
 if __name__ == "__main__":

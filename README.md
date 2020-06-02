@@ -12,3 +12,9 @@ To run the script, run:
 ```
 python main.py
 ```
+## License
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+- **[GNU GPL V3 license](https://www.gnu.org/licenses/gpl-3.0.en.html)**
+- Copyright 2020 © [Sim Shang En](https://github.com/12458)
